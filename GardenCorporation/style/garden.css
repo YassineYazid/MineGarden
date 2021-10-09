@@ -1,0 +1,176 @@
+body {
+	font-family: "Schoolbell", cursive;
+}
+.container {
+	background-color: #fff4d0;
+}
+
+/* Style the navigation menu */
+.topnav {
+	overflow: hidden;
+	/* background-color: #333; */
+	position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #links {
+	background-color: #333;
+	display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+	color: black;
+	background: #fff;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+
+.topnav a :last-child {
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+	background-color: #fff4d0;
+	color: black !important;
+}
+tr {
+	padding: 50px;
+	background-color: #72d762;
+}
+
+.kite {
+	text-align: center;
+	background-color: transparent;
+	/* outline: 2px solid; */
+	/* transform: rotate(45deg) ; */
+	width: 100px;
+	height: 100px;
+	margin-bottom: 50px;
+	margin-right: 1200px;
+	position: relative;
+	background-image: url(../images/garden/greend.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+	transition: transform 250ms;
+	z-index: 1;
+}
+
+.kite:hover {
+	transform: translateY(-2px);
+}
+
+.soil {
+	text-align: center;
+	background-color: transparent;
+	/* transform: rotate(45deg) ; */
+	width: 100px;
+	height: 100px;
+	margin-bottom: 50px;
+	margin-right: 1200px;
+	position: relative;
+	background-image: url(../images/garden/soiles.png);
+	background-repeat: no-repeat;
+	background-size: 100px 100px;
+}
+
+.plant {
+	width: 40px;
+	height: 40px;
+}
+
+.blink {
+	animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+.log {
+	width: 155px;
+	background-color: #f1e5bd;
+	border-color: #f1e5bd;
+	box-shadow: 1px 2px 2px #4e4832;
+	transition: transform 250ms;
+}
+.log:hover {
+	transform: translateY(-2px);
+}
+
+.action-log-avatar {
+	width: 30px;
+	height: 30px;
+}
+.kite img:hover {
+	cursor: pointer;
+}
+
+.kite:hover span {
+	opacity: 1;
+	transform: translate(-20%, 0);
+	z-index: 289;
+}
+
+.kite span {
+	position: absolute;
+	left: 30%;
+	bottom: 50%;
+	opacity: 0;
+	margin-bottom: 1em;
+	padding: 1em;
+	background-color: #f1e5bd;
+	font-size: 1em;
+	line-height: 1.6;
+	text-align: left;
+	white-space: nowrap;
+	transform: translate(-50%, 1em);
+	transition: all 0.15s ease-in-out;
+	border: 1px solid #000;
+	border-radius: 20%;
+	/* z-index: 289; */
+}
+
+.kite span::before {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.5em solid transparent;
+	border-top-color: #f1e5bd;
+	transform: translate(-50%, 0);
+}
+.popup-img-nutrients {
+	width: 15px;
+	height: 15px;
+}
+.action-btn {
+	border-color: #f1e5bd;
+	box-shadow: 1px 1px 1px #4e4832;
+	background-color: #fff;
+	transition: color 250ms;
+}
+
+.action-btn:hover {
+	background-color: #d3c48d;
+}
